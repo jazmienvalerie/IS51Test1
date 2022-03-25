@@ -41,3 +41,40 @@ If the amount is equal or the same, the given output will be "Option 1 and Optio
 
 main
 """
+
+def option1():
+    return 100 * 10
+
+def option2():
+    amount = 1
+    list1= []
+    for i in range(0,10):
+     list1.append(amount)
+     amount *= 2
+    print("list1", list1)
+    total = sum(list1)
+    return total
+
+def main():
+    answer = ""
+    var1 = option1()
+    var2 = option2()
+    if var1 == var2:
+        answer= "Option 1 and Option 2 pays the same."
+    elif var1 < var2:
+        answer= "Option 2 is better."
+    else:
+        answer= "Option 1 is better."
+    
+    #print(var1)
+    #print(var2)
+    print (answer)
+
+main()
+
+
+
+
+
+
+
